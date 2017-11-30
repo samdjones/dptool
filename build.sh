@@ -1,13 +1,13 @@
 #!/bin/bash
 
-export GOPATH=/Users/sam/code/GitHub/dptool
+export GOPATH=`pwd`
 
 # Clean up to begin with
 go clean
 rm -rf out
-# rm -rf pkg
+rm -rf pkg
 
-# Optioally get our deps. Whatever version happens to be current today - yeah I know, good luck :-)
+# Optionally, get our deps. Whatever version happens to be current today - yeah I know, good luck :-)
 # go get github.com/inconshreveable/mousetrap
 # go get github.com/spf13/cobra
 # go get github.com/fsnotify/fsnotify
