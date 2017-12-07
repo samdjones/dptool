@@ -12,18 +12,20 @@ rm -rf pkg
 # go get github.com/spf13/cobra
 # go get github.com/fsnotify/fsnotify
 
-cd src
-
 # Mac build
-mkdir -p out/darwin
-GOOS=darwin GOARCH=amd64 go build -o ../out/darwin/dptool github.com/samdjones/dptool
+mkdir -p bin/darwin
+GOOS=darwin GOARCH=amd64 go build -o bin/darwin/dptool github.com/samdjones/dptool
 
 # Linux build
-mkdir -p out/linux
-GOOS=linux GOARCH=amd64 go build -o ../out/linux/dptool github.com/samdjones/dptool
+mkdir -p bin/linux
+GOOS=linux GOARCH=amd64 go build -o bin/linux/dptool github.com/samdjones/dptool
 
-# Windows build
-mkdir -p out/windows
-GOOS=windows GOARCH=amd64 go build -o ../out/windows/dptool.exe github.com/samdjones/dptool
+# Windows 64 build
+mkdir -p bin/windows64
+GOOS=windows GOARCH=amd64 go build -o bin/windows64/dptool.exe github.com/samdjones/dptool
+
+# Windows 32 build
+mkdir -p bin/windows32
+GOOS=windows GOARCH=386 go build -o bin/windows32/dptool.exe github.com/samdjones/dptool
 
 # Now have some fun. Or something.
