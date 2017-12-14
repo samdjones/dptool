@@ -62,9 +62,12 @@ Now you know you have at least compiled a runnable binary, so go add it to you P
 
 If you want to build binaries for your friends on other platforms, it's just like using the standard go compiler, e.g.:
 
+    $ GOOS=darwin GOARCH=amd64 gb build
+    $ GOOS=linux GOARCH=amd64 gb build
+    $ GOOS=linux GOARCH=386 gb build
     $ GOOS=windows GOARCH=amd64 gb build
     $ GOOS=windows GOARCH=386 gb build
-    $ GOOS=darwin GOARCH=amd64 gb build
+    
 
 (appropriately named binaries should now exist in the bin/ directory)
 
