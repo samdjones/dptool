@@ -10,7 +10,7 @@ The sync command is most useful during DataPower development of e.g. GatewayScri
 
 ## Installing
 
-First of all download a binary suitable for your platform: [releases](releases),
+First of all download a binary suitable for your platform from [releases](../../releases),
 or build from source as described later.
 
 Either way, add the binary to your PATH.
