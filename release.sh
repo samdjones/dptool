@@ -17,9 +17,9 @@ GOOS=linux GOARCH=386 gb build
 GOOS=windows GOARCH=amd64 gb build
 GOOS=windows GOARCH=386 gb build
 
-mkdir bin/dptool
-cp README.md bin/dptool
-mv bin/dptool-* bin/dptool
+mkdir bin/dptoolbinaries
+cp README.md bin/dptoolbinaries
 cd bin
-zip -r dptool.zip dptool/*
+mv dptool-* dptoolbinaries
+zip -r dptoolbinaries.zip dptoolbinaries/*
 cd ..

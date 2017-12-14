@@ -76,4 +76,7 @@ If you want to build binaries for your friends on other platforms, it's just lik
 
 ## Notes
 
-1. Sorry, but AFIAK there is no way to make a GB project go-gettable :-(
++ The sync feature is one-way - i.e. changes are pushed FROM local TO gateway only. This is not going to change anytime soon
++ The sync feature will blindly over-write whatever is on the gateway when first started - i.e. it does not look at last-modified times etc. It is always assumed the local file is the "master". **You have been warned**
++ This tool isn't intended for management of production systems. Try the excellent [DPBuddy](https://myarch.com/dpbuddy) or [DCM](https://github.com/ibm-datapower/datapower-configuration-manager) instead. This tool is currently only aimed at making DataPower *developement* less painful, not *management*
++ Sorry, but AFIAK there is no way to make a GB project go-gettable :-(
