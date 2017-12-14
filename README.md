@@ -42,12 +42,12 @@ Examples:
 
     $ dptool sync ~/tmp https://my_datapower_hostname:5554/mgmt/filestore/my_domain/local --user my_username --pass my_password
     PUT https://my_datapower_host:5554/mgmt/filestore/my_domain/local/hello.txt 201 Created
-        (hello.txt modified)
+        ...hello.txt modified...
     PUT https://my_datapower_host:5554/mgmt/filestore/my_domain/local/hello.txt 200 OK
-        (hello.txt renamed to goodbye.txt)
+        ...hello.txt renamed to goodbye.txt...
     PUT https://my_datapower_host:5554/mgmt/filestore/my_domain/local/goodbye.txt 201 Created
     DELETE https://my_datapower_host:5554/mgmt/filestore/my_domain/local/hello.txt 200 OK
-        (goodbye.txt deleted)
+        ...goodbye.txt deleted...
     DELETE https://my_datapower_host:5554/mgmt/filestore/my_domain/local/goodbye.txt 200 OK
 
 ## Building From Source
