@@ -6,12 +6,12 @@ Currently it supports just 3 primary commands:
 + delete: Delete file on the gateway
 + sync: Continuously syncs files from local dir to gateway dir (non-recursive, ignoring .* files)
 
-The sync command is most useful during DataPower development of e.g. GatewayScript or XSLT allowing you to use Your Favorite IDE (complete with syntax highlighting and other goodies). All the while dptool continuously monitors the local filesystem for changes and synchronises them to a remote DataPower filesystem. Much better than editing files via the web-GUI or copying/pasting from your IDE to the web-GUI. Just hit save in your IDE and the changed are pushed.
+The sync command is most useful during DataPower development of e.g. GatewayScript or XSLT allowing you to use Your Favorite IDE (complete with syntax highlighting and other goodies). All the while dptool continuously monitors the local filesystem for changes and synchronises them to a remote DataPower filesystem. Much better than editing files with the gui or copying/pasting from your IDE to the gui. Just hit save in your IDE and the changed are pushed.
 
 ## Installing
 
 First of all download a binary suitable for your platform from [releases](../../releases),
-or build from source as described later.
+or build from source as described later. If you go the binary download route, your binary will be called something like 'dptool-linux-amd64' - it is suggested you rename it to simply 'dptool'. The rest of this doc assumes you did.
 
 Either way, add the binary to your PATH.
 
