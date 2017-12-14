@@ -8,11 +8,14 @@ Currently it supports just 3 primary commands:
 
 The sync command is most useful during DataPower development of e.g. GatewayScript or XSLT allowing you to use Your Favorite IDE (complete with syntax highlighting and other goodies). All the while dptool continuously monitors the local filesystem for changes and synchronises them to a remote DataPower filesystem. Much better than editing files via the web-GUI or copying/pasting from your IDE to the web-GUI. Just hit save in your IDE and the changed are pushed.
 
-## Running
+## Installing
 
-First of all download a binary suitable for your platform, or build from source as described later.
+First of all download a binary suitable for your platform: [releases](releases),
+or build from source as described later.
 
 Either way, add the binary to your PATH.
+
+## Running
 
 dptool tries to help you, so just run without any arguments for clues:
 
