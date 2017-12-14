@@ -86,7 +86,8 @@ If you want to build binaries for your friends on other platforms, it's just lik
 
 ## Notes
 
-+ The sync feature is one-way - i.e. changes are pushed FROM local TO gateway only. This is not going to change anytime soon
-+ The sync feature will blindly overwrite whatever is on the gateway when first started - i.e. it does not look at last-modified times etc. **You have been warned**
-+ This tool isn't intended for management of production systems. Try [DPBuddy](https://myarch.com/dpbuddy) or [DCM](https://github.com/ibm-datapower/datapower-configuration-manager) instead. This tool is currently only aimed at helping DataPower *developement*, not *management*
-+ Sorry, but AFIAK there is no way to make a GB project go-gettable :-(
++ The sync feature is one-way - i.e. changes are pushed FROM local TO gateway only. This is not going to change anytime soon.
++ The sync feature will blindly overwrite whatever is on the gateway when first started - i.e. it does not look at last-modified times etc. **You have been warned**.
++ This tool isn't intended for management of production systems. Try [DPBuddy](https://myarch.com/dpbuddy) or [DCM](https://github.com/ibm-datapower/datapower-configuration-manager) instead. This tool is currently only aimed at helping DataPower *developement*, not *management*.
++ dptool has not been tested much on non-Mac platforms. There is a know issue on Windows (double-write when local file changes). I'll try and address this sometime soon. Come to think of it, I haven't tested on Linux for quite some time. **You have been warned**.
++ Sorry, but AFIAK there is no way to make a GB project go-gettable :-(.
