@@ -52,37 +52,26 @@ Examples:
 
 ## Building From Source
 
-This project currently depends on GB (https://getgb.io/) to manage dependencies and build.
+Go get the source:
 
-So firstly, please install GB:
+    $ go get github.com/samdjones/dptool
 
-    $ go get github.com/constabulary/gb/...
+Run dptool:
 
-Then it's a simple matter of running the following command in the root dir of this project:
-
-    $ gb build
-
-(a binary for your platform should have been compiled to the the bin/ directory)
-
-Either add the bin/ dir to you PATH or just go:
-
-    $ bin/dptool
+    $ dptool
     For help, try: dptool help
 
-Now you know you have at least compiled a runnable binary, so go add it to you PATH to make life good again.
+Now you know you have at least compiled a runnable binary.
 
 ## Building For Other Platforms
 
 If you want to build binaries for your friends on other platforms, it's just like using the standard go compiler, e.g.:
 
-    $ GOOS=darwin GOARCH=amd64 gb build
-    $ GOOS=linux GOARCH=amd64 gb build
-    $ GOOS=linux GOARCH=386 gb build
-    $ GOOS=windows GOARCH=amd64 gb build
-    $ GOOS=windows GOARCH=386 gb build
-    
-
-(appropriately named binaries should now exist in the bin/ directory)
+    $ GOOS=darwin GOARCH=amd64 go build
+    $ GOOS=linux GOARCH=amd64 go build
+    $ GOOS=linux GOARCH=386 go build
+    $ GOOS=windows GOARCH=amd64 go build
+    $ GOOS=windows GOARCH=386 go build
 
 ## Notes
 
