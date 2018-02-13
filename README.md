@@ -10,10 +10,15 @@ The sync command is most useful during DataPower development of e.g. GatewayScri
 
 ## Installing
 
-First of all download a binary suitable for your platform from [releases](../../releases),
-or build from source as described later. If you go the binary download route, your binary will be called something like 'dptool-linux-amd64' - it is suggested you rename it to simply 'dptool'. The rest of this doc assumes you did.
+The quickest way to get up and running (if you have the Golang toolchain installed), is to build from source:
 
-Either way, add the binary to your PATH.
+    $ go get github.com/samdjones/dptool
+
+dptool should now be on your PATH (assuming $GOPATH/bin is on your PATH as usual).
+
+If you can't build from source, download a binary suitable for your platform from [releases](../../releases). Your binary will be called something like 'dptool-linux-amd64' - it is suggested you rename it to simply 'dptool'. The rest of this doc assumes you did.
+
+Either way, make sure the binary is on your PATH.
 
 ## Running
 
@@ -50,22 +55,9 @@ Examples:
         ...goodbye.txt deleted...
     DELETE https://my_datapower_host:5554/mgmt/filestore/my_domain/local/goodbye.txt 200 OK
 
-## Building From Source
-
-Go get the source:
-
-    $ go get github.com/samdjones/dptool
-
-Run dptool:
-
-    $ dptool
-    For help, try: dptool help
-
-Now you know you have at least compiled a runnable binary.
-
 ## Building For Other Platforms
 
-If you want to build binaries for your friends on other platforms, it's just like using the standard go compiler, e.g.:
+If you want to build binaries for your friends on other platforms, it's really easy, e.g.:
 
     $ GOOS=darwin GOARCH=amd64 go build
     $ GOOS=linux GOARCH=amd64 go build
@@ -78,5 +70,4 @@ If you want to build binaries for your friends on other platforms, it's just lik
 + The sync feature is one-way - i.e. changes are pushed FROM local TO gateway only. This is not going to change anytime soon.
 + The sync feature will blindly overwrite whatever is on the gateway when first started - i.e. it does not look at last-modified times etc. **You have been warned**.
 + This tool isn't intended for management of production systems. Try [DPBuddy](https://myarch.com/dpbuddy) or [DCM](https://github.com/ibm-datapower/datapower-configuration-manager) instead. This tool is currently only aimed at helping DataPower *developement*, not *management*.
-+ dptool has not been tested much on non-Mac platforms. There is a know issue on Windows (double-write when local file changes). I'll try and address this sometime soon. Come to think of it, I haven't tested on Linux for quite some time. **You have been warned**.
-+ Sorry, but AFIAK there is no way to make a GB project go-gettable :-(.
++ dptool has not been tested much on non-Mac platforms. There is a known issue on Windows (double-write when local file changes). I'll try and address this sometime soon. Come to think of it, I haven't tested on Linux for quite some time. **You have been warned**.
