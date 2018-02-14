@@ -37,6 +37,8 @@ Ask for help about the coolest command, sync:
     $ dptool help sync
     ... lots of nice help info about the sync command...
 
+**Note:** Under the covers, dptool uses the REST Management Interface, so you must enable it first (default port used is 5554 used in examples below).
+
 Examples:
 
     $ dptool write ~/tmp/hello.txt https://my_datapower_hostname:5554/mgmt/filestore/my_domain/local/hello.txt --user my_username --pass my_password
