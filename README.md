@@ -37,7 +37,7 @@ Ask for help about the coolest command, sync:
     $ dptool help sync
     ... lots of nice help info about the sync command...
 
-**Note:** Under the covers, dptool uses the REST Management Interface, so you must enable it first (default port used is 5554 used in examples below).
+**Note:** Under the covers, dptool uses the REST Management Interface, so you must enable it first (default port 5554 used in examples below).
 
 Examples:
 
