@@ -13,8 +13,8 @@ The sync command is most useful during DataPower development of e.g. GatewayScri
 There are 3 ways to install get up and running:
 
 + [download a binary](../../releases)
-+ [go get](##Build-From-Source-(go-get))
-+ [clone / make](##Build-From-Source-(clone-/-make))
++ [go get](#Build-From-Source-(go-get))
++ [clone / make](#Build-From-Source-(clone-/-make))
 
 Regardless of method, add a dptool binary to your PATH for convenience.
 
