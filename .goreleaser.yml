@@ -13,4 +13,10 @@ changelog:
   filters:
     exclude:
       - '^docs:'
+      - '^doco:'
+      - '^typo:'
       - '^refactor'
+archive:
+  format_overrides:
+    - goos: windows
+      format: zip

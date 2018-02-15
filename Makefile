@@ -26,16 +26,9 @@ clean:
 #	@git clean -fx
 .PHONY: clean
 
-# Build a distribution (using GoReleaser for convenience).
-dist: test
-	@echo "==> Dist"
-	@goreleaser --rm-dist --snapshot
-	@echo "==> Complete"
-.PHONY: dist
-
 # Release binaries to GitHub.
 release: test
 	@echo "==> Release"
-#	@goreleaser -p 1 --rm-dist -config .goreleaser.yml
+	@goreleaser --rm-dist
 	@echo "==> Complete"
 .PHONY: release
