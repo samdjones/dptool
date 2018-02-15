@@ -12,9 +12,9 @@ changelog:
   sort: asc
   filters:
     exclude:
-      - '^docs:'
-      - '^doco:'
-      - '^typo:'
+      - '^doco'
+      - '^typo'
+      - '^tidy'
       - '^refactor'
 archive:
   format_overrides:

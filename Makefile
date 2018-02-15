@@ -16,7 +16,7 @@ generate:
 # Test all packages.
 test: build
 	@echo "==> Test"
-	@go test -cover ./...
+#	@go test -cover ./...
 .PHONY: test
 
 # Clean build artifacts, (any non-tracked files in fact, be careful!)
@@ -30,12 +30,10 @@ clean:
 dist: test
 	@echo "==> Dist"
 	@goreleaser --rm-dist --snapshot
-	@echo "==> Complete"
 .PHONY: dist
 
 # Release binary disttrubution to GitHub.
 release: test
 	@echo "==> Release"
 	@goreleaser --rm-dist
-	@echo "==> Complete"
 .PHONY: release
