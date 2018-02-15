@@ -12,7 +12,7 @@ The sync command is most useful during DataPower development of e.g. GatewayScri
 
 To install, simply [download a binary](../../releases) or build from source (see below).
 
-Regardless of method, add a dptool binary to your PATH for convenience.
+Regardless of installation method, add a dptool binary to your PATH for convenience.
 
 ## Running
 
@@ -61,7 +61,7 @@ dptool should now be on your PATH (assuming $GOPATH/bin is on your PATH as usual
 
 ## Build From Source (clone / make)
 
-If you want to hack on dptool, you will need the Go toolchain to build, and (optionally) [GoReleaser](https://goreleaser.com/) to make a complete release.
+If you want to hack on dptool, you will need the Go toolchain and Make to build. [GoReleaser](https://goreleaser.com/) is used to release versions.
 
 Clone the repo as usual and:
 
