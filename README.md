@@ -10,15 +10,13 @@ The sync command is most useful during DataPower development of e.g. GatewayScri
 
 ## Installing
 
-The quickest way to get up and running (if you have the Golang toolchain installed), is to build from source:
+There are 3 ways to install get up and running:
 
-    $ go get github.com/samdjones/dptool
++ [download a binary](../../releases)
++ [go get](##Build-From-Source-(go-get))
++ [clone / make](##Build-From-Source-(clone-/-make))
 
-dptool should now be on your PATH (assuming $GOPATH/bin is on your PATH as usual).
-
-If you can't build from source, download a binary suitable for your platform from [releases](../../releases). Your binary will be called something like 'dptool-linux-amd64' - it is suggested you rename it to simply 'dptool'. The rest of this doc assumes you did.
-
-Either way, make sure the binary is on your PATH.
+Regardless of method, add a dptool binary to your PATH for convenience.
 
 ## Running
 
@@ -56,6 +54,24 @@ Examples:
     DELETE https://my_datapower_host:5554/mgmt/filestore/my_domain/local/hello.txt 200 OK
         ...goodbye.txt deleted...
     DELETE https://my_datapower_host:5554/mgmt/filestore/my_domain/local/goodbye.txt 200 OK
+
+## Build From Source (go get)
+
+If you want to download and build from source, you will need the Go toolchain.
+
+    $ go get github.com/samdjones/dptool
+
+dptool should now be on your PATH (assuming $GOPATH/bin is on your PATH as usual).
+
+## Build From Source (clone / make)
+
+If you want to hack on dptool, you will need the Go toolchain to build, and (optionally) [GoReleaser](https://goreleaser.com/) to make a complete release.
+
+Clone the repo as usual and:
+
+    $ make build
+
+A dptool binary should now be found in the base directory.
 
 ## Building For Other Platforms
 

@@ -1,4 +1,3 @@
-
 GO ?= go
 
 # Build all files.
