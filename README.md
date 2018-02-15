@@ -10,11 +10,7 @@ The sync command is most useful during DataPower development of e.g. GatewayScri
 
 ## Installing
 
-There are 3 ways to install get up and running:
-
-+ [download a binary](../../releases)
-+ [go get](#Build-From-Source-(go-get))
-+ [clone / make](#Build-From-Source-(clone-/-make))
+To install, simply [download a binary](../../releases) or build from source (see below).
 
 Regardless of method, add a dptool binary to your PATH for convenience.
 
@@ -75,7 +71,7 @@ A dptool binary should now be found in the base directory.
 
 ## Building For Other Platforms
 
-If you want to build binaries for your friends on other platforms, it's really easy, e.g.:
+If you want to build binaries for your friends on other platforms without using GoReleaser, it's really easy, e.g.:
 
     $ GOOS=darwin GOARCH=amd64 go build
     $ GOOS=linux GOARCH=amd64 go build
