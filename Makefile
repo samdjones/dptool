@@ -26,7 +26,14 @@ clean:
 #	@git clean -fx
 .PHONY: clean
 
-# Release binaries to GitHub.
+# Build a snapshot distribution, but don't pubish to Github
+dist: test
+	@echo "==> Dist"
+	@goreleaser --rm-dist --snapshot
+	@echo "==> Complete"
+.PHONY: dist
+
+# Release binary disttrubution to GitHub.
 release: test
 	@echo "==> Release"
 	@goreleaser --rm-dist
