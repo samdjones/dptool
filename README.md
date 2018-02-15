@@ -65,7 +65,7 @@ If you want to hack on dptool, you will need the Go toolchain and Make to build.
 
 Clone the repo as usual and:
 
-    $ make build
+    $ make
 
 A dptool binary should now be found in the base directory.
 
