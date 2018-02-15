@@ -1,5 +1,5 @@
 build:
-  main: dptool.go
+  main: main.go
   binary: dptool
   goos:
     - darwin
