@@ -53,7 +53,7 @@ Examples:
 
 ## Build From Source (go get)
 
-If you want to download and build from source, you will need the Go toolchain.
+If you want to download and build/install from source (snapshot), you will need the Go toolchain.
 
     $ go get github.com/samdjones/dptool
 
